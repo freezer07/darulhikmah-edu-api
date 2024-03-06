@@ -3,7 +3,7 @@ import moment from "moment";
 
 const helloRouter = express();
 
-helloRouter.get("/hello", (req: Request, res: Response) => {
+helloRouter.get("/", (req: Request, res: Response) => {
   res.json({
     timeStamp: +moment().format("X"),
     appName: process.env.APP_NAME,
