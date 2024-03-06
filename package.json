@@ -6,7 +6,7 @@
   "scripts": {
     "local": "dotenvx run -- tsnd ./src/server.ts",
     "dev": "NODE_ENV=development dotenvx run -- tsnd ./src/server.ts",
-    "prd": "NODE_ENV=production dotenvx run -- node ./build/server.js",
+    "prd": "tsc && NODE_ENV=production dotenvx run -- node ./build/server.js",
     "build": "tsc"
   },
   "keywords": [],
