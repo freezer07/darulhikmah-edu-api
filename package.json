@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "local": "dotenvx run -- tsnd ./src/server.ts",
-    "dev": "NODE_ENV=development dotenvx run -- tsnd ./src/server.ts",
-    "prd": "tsc && NODE_ENV=production dotenvx run -- node ./build/server.js",
+    "local": "dotenvx run -- tsnd ./src/index.ts",
+    "dev": "NODE_ENV=development dotenvx run -- tsnd ./src/index.ts",
+    "prd": "tsc && NODE_ENV=production dotenvx run -- node ./build/index.js",
     "build": "tsc"
   },
   "keywords": [],
